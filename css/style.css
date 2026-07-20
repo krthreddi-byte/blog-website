@@ -1,1 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background: #222;
+  color: white;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: orange;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: white;
+}
+
+.hero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: gray;
+}
+
+/* Search */
+.search-box {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Blog Cards */
+.blog-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-card h3 {
+  padding: 15px;
+}
+
+.blog-card p {
+  padding: 0 15px 15px;
+  color: gray;
+}
+
+.blog-card a {
+  display: inline-block;
+  margin: 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Load More Button */
+.load-more {
+  text-align: center;
+  margin: 40px;
+}
+
+.load-more button {
+  padding: 12px 25px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.load-more button:hover {
+  background: orange;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .search-box input {
+    width: 90%;
+  }
+}
+
+/* Dark Mode CSS - Idhi kindha add cheyyi */
+.dark-mode{
+  background: #121212;
+  color: white;
+}
+
+.dark-mode .hero,
+.dark-mode .blog-card,
+.dark-mode .blog-details{
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode p{
+  color: #ddd;
+}
+.blog-details{
+  width: 80%;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.blog-details img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-details h1{
+  margin: 20px 0;
+}
+
+.blog-details p{
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.blog-details a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+}
+
+form input,
+form textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button{
+  padding: 12px 25px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover{
+  background: orange;
+}
+/* Language Dropdown */
+#language{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.dark-mode{
+  background: #121212;
+  color: white;
+}
+
+.dark-mode nav,
+.dark-mode footer{
+  background: #000;
+}
+
+.dark-mode .hero,
+.dark-mode .blog-card,
+.dark-mode .blog-details,
+.dark-mode form{
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode a{
+  color: white;
+}
+
+#topBtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 50%;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+}
+.like-section{
+  text-align: center;
+  margin: 30px;
+}
+
+#likeBtn{
+  padding: 12px 20px;
+  border: none;
+  background: crimson;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#likeBtn:hover{
+  transform: scale(1.05);
+}
+.comment-section{
+  width: 80%;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.comment-section input,
+.comment-section textarea{
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.comment-section button{
+  padding: 10px 20px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.comment{
+  background: #f4f4f4;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.date-time{
+  text-align: center;
+  margin: 20px;
+}
+
+.date-time h3{
+  color: #555;
+}
+
+#userComment{
+  min-height: 100px;
+  resize: vertical;
+}
+.deleteBtn{
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Dark Mode Comments */
+.dark-mode .comment {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.dark-mode .comment strong {
+  color: #ffffff;
+}
+
+.dark-mode .comment small {
+  color: #bdbdbd;
+}
+
+.dark-mode .comment p {
+  color: #e5e5e5;
+}
+
+.dark-mode .deleteBtn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.dark-mode .deleteBtn:hover {
+  background: #e60000;
+}
+
+.editBtn{
+    background:#007bff;
+    color:white;
+    border:none;
+    padding:6px 10px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-right:6px;
+}
+
+.editBtn:hover{
+    background:#0056b3;
+}
+
+.dark-mode .editBtn{
+    background:#2196f3;
+}
+
+.dark-mode .editBtn:hover{
+    background:#1976d2;
+}
+
+.active {
+  color: #ff9800;
+  font-weight: bold;
+  border-bottom: 2px solid #ff9800;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.social-icons{
+    margin-top:10px;
+}
+
+.social-icons a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:#ff9800;
+}
+
+.blog-card{
+    overflow:hidden;
+}
+
+.blog-card img{
+    transition:0.4s;
+}
+
+.blog-card:hover img{
+    transform:scale(1.08);
+}
