@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav>
+  <div class="logo">Blog Website</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><button id="darkBtn">🌙 Dark Mode</button></li>
+    <li>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="te">తెలుగు</option>
+        <option value="hi">हिन्दी</option>
+      </select>
+    </li>
+  </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1 id="hero-title">Welcome to My Blog</h1>
+    <p id="hero-text">
+     Explore the latest articles on Technology, AI, and Programming.
+    </p>
+ </header>
+
+  <!-- Search -->
+    <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search articles...">
+    </div>
+  
+  <!-- Blog Cards -->
+  <section class="blog-container">
+
+    <div class="blog-card" data-title="Python Programming">
+      <img src="images/python.webp" alt="python">
+      <h3>Top 5 Programming Languages</h3>
+      <p>Discover the most popular programming languages in 2026.</p>
+      <p>📅 July 10, 2026</p>
+      <p>📂 Category: Technology</p>
+      <p>🏷️ Tags: #Python #Programming</p>
+      <a href="blog1.html">Read More</a>
+    </div>
+
+    <div class="blog-card" data-title="Artificial Intelligence">
+      <img src="images/ai.png" alt="Artificial Intelligence">
+      <h3>Introduction to Artificial Intelligence</h3>
+      <p>Learn the basics of AI and its future applications.</p>
+      <p>📅 July 10, 2026</p>
+      <p>📂 Category: Artificial Intelligence</p>
+      <p>🏷️ Tags: #AI #MachineLearning</p>
+      <a href="blog2.html">Read More</a>
+    </div>
+
+    <div class="blog-card" data-title="Frontend">
+      <img src="images/frontend-development.jpg" alt="Frontend">
+      <h3>How to Become a Frontend Developer</h3>
+      <p>A complete roadmap to becoming a successful frontend developer.</p>
+      <p>📅 July 8, 2026</p>
+      <p>📂 Category: Web Development</p>
+      <p>🏷️ Tags: #HTML #CSS #JavaScript</p>
+      <a href="blog3.html">Read More</a>
+    </div>
+
+     <div class="blog-card" data-title="VScod">
+      <img src="images/vscode.jpg" alt="VScode">
+      <h3>Best VS Code Extensions for Students</h3>
+      <p>Boost your productivity with these useful extensions.</p>
+      <p>📅 July 7, 2026</p>
+      <p>📂 Category: Development Tools</p>
+      <p>🏷️ Tags: #VSCode #Extensions</p>
+      <a href="blog4.html">Read More</a>
+    </div>
+
+    <div class="blog-card" data-title="HTML-CSS">
+     <img src="images/HTML-CSS-13.jpg" alt="HTML-CSS">
+     <h3>Understanding HTML and CSS</h3>
+     <p>Learn the building blocks of web development.</p>
+     <p>📅 July 6, 2026</p>
+     <p>📂 Category: Frontend</p>
+     <p>🏷️ Tags: #HTML #CSS</p>
+     <a href="blog5.html">Read More</a>
+    </div>
+
+    <div class="blog-card" data-title="AI Tools">
+     <img src="images/ai-tools-for-students.jpeg" alt="AI Tools">
+     <h3>Top 10 AI Tools for Students</h3>
+     <p>Explore powerful AI tools that can help in studies and projects.</p>
+     <p>📅 July 5, 2026</p>
+     <p>📂 Category: AI Tools</p>
+     <p>🏷️ Tags: #ChatGPT #Gemini #Students</p>
+     <a href="blog6.html">Read More</a>
+    </div>  
+
+  </section>
+
+  <!-- Load More Button -->
+  <div class="load-more">
+    <button>Load More</button>
+  </div>
+
+  <!-- Like Section -->
+<div class="like-section">
+  <button id="likeBtn">❤️ Like</button>
+  <span id="likeCount">0</span> Likes
+</div>
+
+<!-- Comment Section -->
+<div class="comment-section">
+  <h2>Leave a Comment</h2>
+
+  <input type="text" id="userName" placeholder="Your Name">
+
+  <textarea id="userComment"
+    placeholder="Write your comment"></textarea>
+
+  <button id="commentBtn">Post Comment</button>
+
+  <div id="comments"></div>
+</div>
+
+<!-- Date & Time -->
+<div class="date-time">
+  <h3 id="dateTime"></h3>
+</div>
+
+<!-- Footer -->
+<footer>
+
+  <p>© 2026 My Blog | All Rights Reserved</p>
+
+  <div class="social-icons">
+
+    <a href="https://github.com/" target="_blank">💻 GitHub</a>
+
+    <a href="https://linkedin.com/" target="_blank">💼 LinkedIn</a>
+
+    <a href="https://instagram.com/" target="_blank">📷 Instagram</a>
+
+    <a href="mailto:blogwebsite@gmail.com">📧 Email</a>
+
+  </div>
+
+</footer>
+
+  <button id="topBtn">⬆️ Top</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
